@@ -1,0 +1,2 @@
+# Riskified-Hackathon
+I participated in a Hackathon that took place at Riskified.  As a preparation for the Hackathon I had to learn Angular on my own and then implement what I learned for the project. The task was to build a search engine for movies information using an API from the IMDB website in under 9 hours. Search for any movie that you want, and for more information about the movie just click on the picture. In order to download the app use npm I before running the app in your computer.
