@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+.home_container{
+    background-image: url('./home_page_backgroung.jpg');
+    min-width: 100%;
+    min-height: 100%;
+    height: 98vh;
+}
+
+.search{
+    width: 45%;
+    height: 20vh;
+    position: relative;
+    top: 130px;
+    left: 55%;
+}
+
+input{
+    width: 50%;
+    height: 4vh;
+    margin-right:  10px;
+    font-size: 20px;
+}
+button{
+    width: 20%;
+    height: 4.5vh;
+    top: 80px;
+    position: relative;
+    right:  300px;
+    background-color: rgb(189, 176, 152);
+    border-radius: 50px;
+    font-size: 20px;
+
+}
+button:hover{
+    background-color: rgb(165, 114, 20);
+
+}
+
+.header_container h1{
+    font-size: 50px;
+    top: 50px;
+    right: 300px;
+    position: absolute;
+    color: rgb(98, 24, 24)
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    font-family: 'Sriracha', cursive;
+}
+
+ .movies_info_container{
+    width: 15%;
+    height: 40vh;
+    position: absolute;
+    top: 490px;
+    right: -65%;
+    left: 55%;
+    float: left;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+
+
+
+.movies_info_container .front_of_pic img{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.movies_info_container:hover .front_of_pic img{
+    transform: rotateX(-180deg);
+}
+
+.movies_info_container:hover .back-of_pic{
+    transform: rotateX(0deg);
+}
+
+
+.movies_info_container .back-of_pic{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+   
+    background-image:  url('https://cdn.pixabay.com/photo/2017/02/23/21/35/cinema-2093264__340.jpg');
+    background-position: center;
+}
+
+.movies_info_container .back-of_pic .details{
+    position: absolute;
+}
+
+.movies_info_container .back-of_pic .details h2 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+
+}
+.movies_info_container .back-of_pic .details p{
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+
+}
+.movies_info_container .back-of_pic .details a{
+    padding-left: 20px;
+    text-decoration: none;
+    width: 20%;
+    height: 5vh;
+    color:white;
+    top: 50px;
+    font-size: 30px;
+    position: relative;
+
+}
+
+.movies_info_container_harry{
+    width: 15%;
+    height: 40vh;
+    position: absolute;
+    top: 490px;
+ 
+    left: 72%;
+ 
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.movies_info_container_harry .front_of_pic_harry img{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.movies_info_container_harry .back-of_pic_harry{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+    background-image:  url('https://cdn.pixabay.com/photo/2017/02/23/21/35/cinema-2093264__340.jpg');
+    background-position: center;
+}
+.movies_info_container_harry .back-of_pic_harry .details{
+    position: absolute;
+}
+
+.movies_info_container_harry:hover .front_of_pic_harry img{
+    transform: rotateX(-180deg);
+}
+
+.movies_info_container_harry:hover .back-of_pic_harry{
+    transform: rotateX(0deg);
+}
+
+.movies_info_container_harry .back-of_pic_harry .details h2 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+
+}
+.movies_info_container_harry .back-of_pic_harry .details p{
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+
+}
+.movies_info_container_harry .back-of_pic_harry .details a{
+  
+    padding-left: 20px;
+    text-decoration: none;
+    width: 20%;
+    height: 5vh;
+    color:white;
+    top: 75px;
+    font-size: 30px;
+    position: relative;
+
+}
+
+
+
+
+.movies_info_container_shawahank{
+    width: 15%;
+    height: 40vh;
+    position: absolute;
+    top: 490px;
+    left: 89%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.movies_info_container_shawahank .front_of_pic_shawahank img{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.movies_info_container_shawahank .back-of_pic_shawahank{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+    background-image:  url('https://cdn.pixabay.com/photo/2017/02/23/21/35/cinema-2093264__340.jpg');
+    background-position: center;
+}
+.movies_info_container_shawahank .back-of_pic_shawahank .details{
+    position: absolute;
+}
+
+.movies_info_container_shawahank:hover .front_of_pic_shawahank img{
+    transform: rotateX(-180deg);
+}
+
+.movies_info_container_shawahank:hover .back-of_pic_shawahank{
+    transform: rotateX(0deg);
+}
+
+.movies_info_container_shawahank .back-of_pic_shawahank .details h2 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+
+}
+.movies_info_container_shawahank .back-of_pic_shawahank .details p{
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+
+}
+.movies_info_container_shawahank .back-of_pic_shawahank .details a{
+    padding-left: 20px;
+    text-decoration: none;
+    width: 20%;
+    height: 5vh;
+    color:white;
+    top: 23px;
+    font-size: 30px;
+    position: relative;
+
+}
+

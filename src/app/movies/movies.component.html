@@ -1,0 +1,20 @@
+
+<div class="movis_container">
+    <h1>Search Results</h1>
+<ul *ngIf = 'movies && movies.results.length > 0 ; else err'>
+    <li *ngFor="let movie of movies.results" [routerLink]="['/Movie',movie.id]">
+        <h2> {{movie.title}}</h2>
+        <!-- <p id="description">Movie description <br> {{movie.overview}}</p> -->
+        <p id="release_date">Release date  {{movie.release_date}}</p>
+        <img src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}">
+    </li>
+   
+</ul>
+</div>
+<ng-template #err>
+    <h1>Oops.. Page Not found</h1>
+</ng-template>
+
+
+
+
